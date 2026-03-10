@@ -1,313 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morning Sprout Consulting Pvt Ltd</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        /* --- CSS VARIABLES & RESET --- */
-        :root {
-            --primary-green: #2E5C48; /* Deep Forest Green */
-            --accent-green: #4CAF50;  /* Bright Sprout Green */
-            --light-bg: #F4F9F5;      /* Very light green tint */
-            --white: #FFFFFF;
-            --text-dark: #333333;
-            --text-light: #666666;
-            --border-color: #e0e0e0;
-            --transition: all 0.3s ease;
-        }
+<title>Morning Sprout Consulting Pvt Ltd</title>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f5f5f5;
+}
 
-        body {
-            font-family: 'Inter', sans-serif;
-            color: var(--text-dark);
-            line-height: 1.6;
-            background-color: var(--white);
-            overflow-x: hidden;
-        }
+header{
+background:#0a7d4f;
+color:white;
+padding:20px;
+text-align:center;
+}
 
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
+nav{
+background:#ffffff;
+padding:10px;
+text-align:center;
+}
 
-        ul {
-            list-style: none;
-        }
+nav a{
+margin:15px;
+text-decoration:none;
+color:#0a7d4f;
+font-weight:bold;
+}
 
-        img {
-            max-width: 100%;
-            display: block;
-        }
+section{
+padding:40px;
+max-width:900px;
+margin:auto;
+}
 
-        /* --- UTILITIES --- */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+.hero{
+background:#e8f7ef;
+text-align:center;
+padding:60px;
+}
 
-        .section-padding {
-            padding: 80px 0;
-        }
+.services{
+background:white;
+}
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 60px;
-        }
+footer{
+background:#0a7d4f;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
+</head>
 
-        .section-title h2 {
-            font-size: 2.5rem;
-            color: var(--primary-green);
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
+<body>
 
-        .section-title p {
-            color: var(--text-light);
-            max-width: 600px;
-            margin: 0 auto;
-        }
+<header>
+<h1>Morning Sprout Consulting Pvt Ltd</h1>
+<p>Sustainability • Strategic Communication • Consulting</p>
+</header>
 
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: var(--primary-green);
-            color: var(--white);
-            border-radius: 5px;
-            font-weight: 600;
-            transition: var(--transition);
-            border: 2px solid var(--primary-green);
-        }
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
 
-        .btn:hover {
-            background-color: transparent;
-            color: var(--primary-green);
-        }
+<section class="hero">
+<h2>Strategic Communication & Sustainability Advisory</h2>
+<p>Helping organisations lead with clarity, credibility and impact.</p>
+</section>
 
-        .btn-outline {
-            background-color: transparent;
-            border: 2px solid var(--white);
-            color: var(--white);
-        }
+<section>
+<h2>About Us</h2>
+<p>Morning Sprout Consulting Pvt Ltd works at the intersection of sustainability, strategic communication and leadership positioning. We help organisations design impactful strategies and communicate them effectively.</p>
+</section>
 
-        .btn-outline:hover {
-            background-color: var(--white);
-            color: var(--primary-green);
-        }
+<section class="services">
+<h2>Our Services</h2>
+<ul>
+<li>Management Consulting</li>
+<li>Leadership Positioning</li>
+<li>Digital Marketing & Branding</li>
+<li>Sustainability Consulting</li>
+<li>Strategic Communication</li>
+<li>Integrated Marketing Communication</li>
+<li>Capacity Building & Institutional Training</li>
+</ul>
+</section>
 
-        /* --- HEADER & NAV --- */
-        header {
-            background-color: var(--white);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
+<section>
+<h2>Contact</h2>
+<p>Email: info@morningsproutconsulting.com</p>
+<p>Delhi, India</p>
+</section>
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 80px;
-        }
+<footer>
+<p>© Morning Sprout Consulting Pvt Ltd</p>
+</footer>
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-green);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .logo i {
-            color: var(--accent-green);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-
-        .nav-links a {
-            font-weight: 500;
-            color: var(--text-dark);
-            transition: var(--transition);
-            font-size: 0.95rem;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent-green);
-        }
-
-        .hamburger {
-            display: none;
-            cursor: pointer;
-            font-size: 1.5rem;
-            color: var(--primary-green);
-        }
-
-        /* --- HERO SECTION --- */
-        #home {
-            height: 100vh;
-            background: linear-gradient(rgba(46, 92, 72, 0.85), rgba(46, 92, 72, 0.7)), 
-                        url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            color: var(--white);
-            margin-top: 0;
-        }
-
-        .hero-content h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        .hero-content p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            opacity: 0.9;
-        }
-
-        /* --- ABOUT PREVIEW --- */
-        #about {
-            background-color: var(--white);
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-
-        .about-image img {
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .about-text h3 {
-            font-size: 2rem;
-            color: var(--primary-green);
-            margin-bottom: 20px;
-        }
-
-        .about-text p {
-            color: var(--text-light);
-            margin-bottom: 20px;
-        }
-
-        .stats {
-            display: flex;
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .stat-item h4 {
-            font-size: 2rem;
-            color: var(--accent-green);
-        }
-
-        .stat-item span {
-            font-size: 0.9rem;
-            color: var(--text-light);
-        }
-
-        /* --- SERVICES --- */
-        #services {
-            background-color: var(--light-bg);
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .service-card {
-            background: var(--white);
-            padding: 40px 30px;
-            border-radius: 8px;
-            transition: var(--transition);
-            border-bottom: 3px solid transparent;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            border-bottom: 3px solid var(--accent-green);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.08);
-        }
-
-        .service-icon {
-            font-size: 2.5rem;
-            color: var(--primary-green);
-            margin-bottom: 20px;
-        }
-
-        .service-card h3 {
-            font-size: 1.25rem;
-            margin-bottom: 15px;
-            color: var(--text-dark);
-        }
-
-        .service-card p {
-            color: var(--text-light);
-            font-size: 0.95rem;
-        }
-
-        /* --- CONTACT --- */
-        #contact {
-            background-color: var(--white);
-        }
-
-        .contact-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1.5fr;
-            gap: 50px;
-            background: var(--white);
-            box-shadow: 0 0 40px rgba(0,0,0,0.05);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .contact-info {
-            background-color: var(--primary-green);
-            color: var(--white);
-            padding: 50px;
-        }
-
-        .contact-info h3 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-        }
-
-        .contact-info p {
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
-
-        .info-item {
-            display: flex;
-
-            align-items: center;
-
+</body>
+</html>
